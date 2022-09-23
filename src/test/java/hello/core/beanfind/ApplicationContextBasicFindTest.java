@@ -1,5 +1,6 @@
-package hello.core;
+package hello.core.beanfind;
 
+import hello.core.AppConfig;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
 import org.junit.jupiter.api.Assertions;
@@ -28,6 +29,7 @@ public class ApplicationContextBasicFindTest {
     }
 
     // 구체 타입으로 조회시 유연성이 떨어진다.
+    // 역할에 의존하는 게 더 좋음, 구현에 의존하는 것 보다
     @Test
     @DisplayName("구체 타입으로 조회")
     void findBeanByName2() {

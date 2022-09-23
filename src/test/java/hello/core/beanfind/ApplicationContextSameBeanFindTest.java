@@ -1,4 +1,4 @@
-package hello.core;
+package hello.core.beanfind;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
